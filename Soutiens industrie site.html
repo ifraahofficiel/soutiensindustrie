@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOUTIENS INDUSTRIE</title>
+<meta name="description" content="SOUTIENS INDUSTRIE est une entreprise de services industriels et de construction au Sénégal.">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+:root{
+ --blue:#0d1b2a;
+ --blue2:#162633;
+ --orange:#e85d04;
+ --light:#f4f6f8;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#fff;color:#000}
+
+/* HEADER */
+header{
+ position:sticky;
+ top:0;
+ z-index:100;
+ background:linear-gradient(180deg,#ffffff,#f2f4f6);
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:14px 28px;
+ box-shadow:0 8px 24px rgba(0,0,0,.15);
+}
+.brand{display:flex;align-items:center;gap:14px}
+header img{height:46px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.25))}
+header .brand span{
+ font-size:18px;
+ font-weight:800;
+ letter-spacing:.6px;
+ background:linear-gradient(135deg,#0d1b2a,#e85d04);
+ -webkit-background-clip:text;
+ -webkit-text-fill-color:transparent;
+}
+nav a{margin-left:22px;text-decoration:none;color:#0d1b2a;font-weight:700}
+nav a:hover{color:var(--orange)}
+
+/* HERO */
+.hero{
+ min-height:90vh;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ background:linear-gradient(180deg,#0b1f2a,#162633);
+ color:#fff;
+ padding:40px 20px;
+}
+.hero h1{
+ font-size:52px;
+ background:linear-gradient(135deg,#ffffff,#ffb703);
+ -webkit-background-clip:text;
+ -webkit-text-fill-color:transparent;
+ margin-bottom:10px;
+}
+.hero p{font-size:18px;opacity:.9}
+.btn{
+ display:inline-block;
+ margin-top:30px;
+ padding:16px 34px;
+ border-radius:30px;
+ background:linear-gradient(135deg,#ff7a18,#e85d04);
+ color:#fff;
+ font-weight:800;
+ text-decoration:none;
+ box-shadow:0 12px 30px rgba(0,0,0,.4);
+}
+
+section{padding:80px 26px;background:var(--light)}
+section.dark{background:#fff}
+h2{text-align:center;font-size:36px;margin-bottom:46px}
+
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+ gap:28px;
+}
+.card{
+ background:#fff;
+ padding:34px 28px;
+ border-radius:22px;
+ text-align:center;
+ box-shadow:0 14px 38px rgba(0,0,0,.18);
+}
+.card i{font-size:40px;color:var(--orange);margin-bottom:18px}
+
+.refs{display:flex;gap:40px;justify-content:center;flex-wrap:wrap}
+.refs img{height:72px;background:#fff;padding:14px 20px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+
+footer{
+ background:#0f2430;
+ color:#cfd8dc;
+ padding:28px 20px;
+ text-align:center;
+ font-size:13px;
+}
+
+@media(max-width:768px){
+ nav{display:none}
+ .hero h1{font-size:32px}
+}
+
+/* WHATSAPP FLOAT BUTTON */
+.whatsapp{
+ position:fixed;
+ right:22px;
+ bottom:22px;
+ width:64px;
+ height:64px;
+ border-radius:50%;
+ background:linear-gradient(135deg,#25D366,#1ebe57);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ color:#fff;
+ font-size:30px;
+ box-shadow:0 14px 40px rgba(0,0,0,.45);
+ z-index:999;
+ transition:.3s ease;
+}
+.whatsapp:hover{
+ transform:scale(1.08) rotate(6deg);
+ box-shadow:0 20px 55px rgba(0,0,0,.6);
+}
+.whatsapp::after{
+ content:"WhatsApp – discussion rapide";
+ position:absolute;
+ right:74px;
+ background:#0d1b2a;
+ color:#fff;
+ padding:7px 14px;
+ border-radius:10px;
+ font-size:12px;
+ opacity:0;
+ transform:translateX(10px);
+ transition:.3s;
+ white-space:nowrap;
+}
+.whatsapp:hover::after{
+ opacity:1;
+ transform:translateX(0);
+}
+
+/* CALL BUTTON */
+.call-btn{
+ position:fixed;
+ right:22px;
+ bottom:96px;
+ width:64px;
+ height:64px;
+ border-radius:50%;
+ background:linear-gradient(135deg,#0d1b2a,#162633);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ color:#fff;
+ font-size:26px;
+ box-shadow:0 14px 40px rgba(0,0,0,.45);
+ z-index:998;
+ transition:.3s ease;
+}
+.call-btn:hover{
+ transform:scale(1.08);
+ box-shadow:0 20px 55px rgba(0,0,0,.6);
+}
+.call-btn::after{
+ content:"Appel direct";
+ position:absolute;
+ right:74px;
+ background:#0d1b2a;
+ color:#fff;
+ padding:7px 14px;
+ border-radius:10px;
+ font-size:12px;
+ opacity:0;
+ transform:translateX(10px);
+ transition:.3s;
+ white-space:nowrap;
+}
+.call-btn:hover::after{
+ opacity:1;
+ transform:translateX(0);
+}
+</style>
+</head>
+
+<body>
+<header>
+ <div class="brand">
+  <img src="logo.png" alt="Logo SOUTIENS INDUSTRIE">
+  <span>SOUTIENS INDUSTRIE</span>
+ </div>
+ <nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#apropos">À propos</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+ </nav>
+</header>
+
+<section class="hero" id="accueil">
+ <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.08;pointer-events:none">
+  <img src="logo.png" alt="Logo SOUTIENS INDUSTRIE" style="height:320px">
+ </div>
+ <div data-aos="zoom-in" style="position:relative;z-index:1">
+  <h1>SOUTIENS INDUSTRIE</h1>
+  <p>Entreprise de services industriels et de construction</p>
+  <a href="#contact" class="btn">Demander un devis</a>
+ </div>
+</section>
+
+<section class="dark" id="services">
+ <div style="display:flex;justify-content:center;margin-bottom:30px" data-aos="fade-down">
+  <img src="logo.png" alt="Logo SOUTIENS INDUSTRIE" style="height:90px">
+ </div>
+ <h2>Nos services</h2>
+ <div class="grid">
+  <div class="card"><i class="fas fa-industry"></i><h3>Maintenance industrielle</h3></div>
+  <div class="card"><i class="fas fa-hard-hat"></i><h3>Génie civil</h3></div>
+  <div class="card"><i class="fas fa-truck"></i><h3>Transport industriel</h3></div>
+  <div class="card"><i class="fas fa-fire-extinguisher"></i><h3>Soudure & peinture</h3></div>
+ </div>
+</section>
+
+<section id="apropos">
+ <h2>À propos de nous</h2>
+ <p style="max-width:900px;margin:0 auto 40px;text-align:center">SOUTIENS INDUSTRIE accompagne les industries majeures avec des solutions fiables, sécurisées et conformes aux standards internationaux.</p>
+</section>
+
+<section>
+ <h2>Références</h2>
+ <div class="refs">
+  <img src="ics.jpg" alt="ICS">
+  <img src="New_Logo-320x202.png" alt="Eramet Grande Côte">
+ </div>
+</section>
+
+<section id="contact" style="padding:80px 26px;background:#fff">
+ <h2>Contact</h2>
+ <div style="max-width:600px;margin:auto;text-align:center">
+  <p>Contactez-nous pour vos projets industriels et de construction.</p>
+  <p><strong>Téléphone :</strong> 77 101 50 26<br><strong>Email :</strong> soutiensindustrie@gmail.com</p>
+ </div>
+</section>
+
+<footer>
+ <div style="max-width:1100px;margin:auto;display:grid;gap:16px">
+  <div style="font-weight:700;font-size:14px">
+   SOUTIENS INDUSTRIE<br>
+   <span style="font-weight:400">
+    <i class="fas fa-envelope"></i> soutiensindustrie@gmail.com &nbsp;|&nbsp;
+    <i class="fas fa-phone"></i> 77 101 50 26 – 77 54 16 922
+   </span>
+  </div>
+
+  <div style="font-size:12.5px;opacity:.85">
+   <i class="fas fa-file-signature"></i>
+   <strong>RCCM :</strong> SN.DKR.2016.A.10194 &nbsp;|&nbsp;
+   <i class="fas fa-id-card"></i>
+   <strong>NINEA :</strong> 005932414
+  </div>
+
+  <div style="font-size:12.5px;opacity:.85">
+   <i class="fas fa-location-dot"></i>
+   Rue 30 Tolbia Dakar / Darou Khoudoss Mboro / Thiès – Avenue Lat. Dior
+  </div>
+
+  <div style="margin-top:12px;font-size:12px;opacity:.7">
+   Développé par <strong>Idée'Reach Digital</strong> — Ifrahima Ba
+  </div>
+ </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+ AOS.init({ duration:900, once:true });
+
+ // Menu mobile (prévu pour évolution future)
+ const burger = document.getElementById('burger');
+ const mobileMenu = document.getElementById('mobileMenu');
+ if(burger && mobileMenu){
+  burger.addEventListener('click', ()=>{
+   mobileMenu.classList.toggle('active');
+  });
+  mobileMenu.querySelectorAll('a').forEach(link=>{
+   link.addEventListener('click',()=>mobileMenu.classList.remove('active'));
+  });
+ }
+
+ // Scroll spy
+ const sections = document.querySelectorAll('section[id]');
+ const navLinks = document.querySelectorAll('nav a');
+ window.addEventListener('scroll', ()=>{
+  let scrollY = window.pageYOffset;
+  sections.forEach(sec=>{
+   const sectionTop = sec.offsetTop - 120;
+   const sectionHeight = sec.offsetHeight;
+   if(scrollY >= sectionTop && scrollY < sectionTop + sectionHeight){
+    navLinks.forEach(l=>l.classList.remove('active'));
+    const activeLink = document.querySelector('nav a[href="#'+sec.id+'"]');
+    if(activeLink) activeLink.classList.add('active');
+   }
+  });
+ });
+</script>
+
+<a href="tel:+221771015026" class="call-btn" aria-label="Appel téléphonique 77 101 50 26">
+ <i class="fas fa-phone"></i>
+</a>
+
+<a href="https://wa.me/221771015026?text=Bonjour%20SOUTIENS%20INDUSTRIE%2C%0AJe%20souhaite%20%C3%A9changer%20avec%20vous%20concernant%20vos%20services%20industriels%20et%20de%20construction.%0AMerci%20de%20me%20recontacter.%0ACordialement." target="_blank" class="whatsapp" aria-label="WhatsApp SOUTIENS INDUSTRIE 77 101 50 26">
+ <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
